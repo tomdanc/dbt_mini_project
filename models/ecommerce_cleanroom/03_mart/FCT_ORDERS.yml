@@ -1,0 +1,25 @@
+
+version: 2
+
+models:
+  - name: FCT_ORDERS
+    columns:
+      - name: order_id
+        data_tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_CUSTOMERS')
+                field: customer_id
+              config:
+                severity: warn
+
+      - name: status
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['paid', 'completed', 'pending', 'cancelled']

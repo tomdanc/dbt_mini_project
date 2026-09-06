@@ -33,8 +33,8 @@ select
 
     unit,
 
-    case when sku_rn > 1 then 'duplicate_sku' end as reject_reason,
 
-     case when unit_price_czk < 0 then 'negative_price' end as quality_issue
+    case when unit_price_czk < 0 then 'negative_price' end as quality_issue
 
 from step_02_sku
+where sku_rn = 1

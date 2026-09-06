@@ -1,9 +1,9 @@
 version: 2
 
 models:
-  - name: L02_CUSTOMERS
+  - name: DIM_PRODUCTS
     columns:
-      - name: customer_id
+      - name: sku
         data_tests:
           - unique
           - not_null

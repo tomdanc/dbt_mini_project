@@ -9,17 +9,20 @@ with numbered as (
     from {{ ref('L01_CUSTOMERS') }}
 ),
 
-flagged as (
+id_deduplication as (
 
     select *,
-        case
-            when customer_id is null then 'missing_customer_id'
-            when rn > 1              then 'duplicate_exact'
-        end as reject_reason
+        row_number() over (
+            partition by customer_id
+            order by customer_id
+        ) as id_rn
 
     from numbered
+    where rn = 1
+      and customer_id is not null
 
 )
+
 
 select
     customer_id,
@@ -27,11 +30,12 @@ select
     email,
     phone,
     country,
-    signup_date,
-    
-    reject_reason
+    signup_date
 
-from flagged
+    from id_deduplication
+    where id_rn = 1
+
+
 
 
 

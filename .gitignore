@@ -17,3 +17,4 @@ warehouse
 # os / misc
 .DS_Store
 cleanroom-mentor.zip
+dbt_internal_packages/

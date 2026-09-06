@@ -1,15 +1,15 @@
 version: 2
 
 models:
-  - name: L02_PRODUCTS
+  - name: DIM_CUSTOMERS
     columns:
-      - name: sku
+      - name: customer_id
         data_tests:
           - unique
           - not_null
 
-      - name: quality_issue
+      - name: country
         data_tests:
           - accepted_values:
               arguments:
-                values: ['negative_price']
+                values: ['CZ', 'SK', 'DE', 'PL', 'AT']

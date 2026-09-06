@@ -5,22 +5,9 @@ models:
     columns:
       - name: item_id
         data_tests:
-          - unique:
-              config:
-                where: "reject_reason is null"
-          - not_null:
-              config:
-                where: "reject_reason is null"
+          - unique
+          - not_null
 
       - name: order_id
         data_tests:
-          - not_null:
-              config:
-                where: "reject_reason is null"
-
-      - name: reject_reason
-        data_tests:
-          - accepted_values:
-              arguments:
-              
-               values: ['duplicate_exact', 'invalid_quantity', 'orphan_order']
+          - not_null

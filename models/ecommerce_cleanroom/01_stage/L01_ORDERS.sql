@@ -17,7 +17,7 @@ SELECT
 
     NULLIF(UPPER(TRIM(currency)), '') as currency,
     -- again why try cast? because we need to change the datatype
-    TRY_CAST(REPLACE(REGEXP_REPLACE(total_amount, '[^0-9,.-]', '', 'g'), ',', '.') AS DECIMAL(18,2)) as total_amount
+     TRY_CAST(REPLACE(REGEXP_REPLACE(total_amount, '[^0-9,.-]', '', 'g'), ',', '.') AS INTEGER) as total_amount-- integer here intead of the decimal
 
 FROM 
     {{source('warehouse' ,'raw_orders')}}
