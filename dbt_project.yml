@@ -1,0 +1,78 @@
+name: "ecommerce_cleanroom"
+version: "1.0.0"
+profile: "ecommerce_cleanroom"
+
+model-paths: ["models"]
+snapshot-paths: ["snapshots"]
+analysis-paths: ["analyses"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+test-paths: ["tests"]
+
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+tests:
+  +severity: warn
+  
+models:
+  ecommerce_cleanroom:        # <- project name
+    ecommerce_cleanroom:      # <- the folder models/ecommerce_cleanroom
+      "01_stage":
+        +materialized: view
+      "02_intermidiate":
+        +materialized: view
+      "03_mart":
+        +materialized: table
+      audit:
+        +materialized: table
+
+seeds:
+  ecommerce_cleanroom:
+    # Typing is YOUR job in staging — the loader must not guess.
+    raw_customers:
+      +column_types:
+        customer_id: varchar
+        full_name: varchar
+        email: varchar
+        phone: varchar
+        country: varchar
+        signup_date: varchar
+    raw_products:
+      +column_types:
+        sku: varchar
+        product_name: varchar
+        category: varchar
+        unit_price_czk: varchar
+        unit: varchar
+    raw_orders:
+      +column_types:
+        order_id: varchar
+        customer_id: varchar
+        order_date: varchar
+        status: varchar
+        currency: varchar
+        total_amount: varchar
+    raw_order_items:
+      +column_types:
+        item_id: varchar
+        order_id: varchar
+        sku: varchar
+        quantity: varchar
+        unit_price: varchar
+        line_total: varchar
+    raw_customers_day2:
+      +column_types:
+        customer_id: varchar
+        full_name: varchar
+        email: varchar
+        phone: varchar
+        country: varchar
+        signup_date: varchar
+    raw_products_day2:
+      +column_types:
+        sku: varchar
+        product_name: varchar
+        category: varchar
+        unit_price_czk: varchar
+        unit: varchar

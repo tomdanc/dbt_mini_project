@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: L01_ORDERS_ITEMS
+    description: ""
+    data_tests:
+      - dbt_utils.expression_is_true:
+          arguments:
+            expression: "ROUND(quantity * unit_price, 2) = ROUND(line_total, 2)"
+    columns:
+      - name: item_id
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+          - unique
+
+      - name: order_id
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+
+      - name: sku
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+
+      - name: quantity
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+
+      - name: unit_price
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+
+      - name: line_total
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null

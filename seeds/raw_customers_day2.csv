@@ -1,0 +1,56 @@
+customer_id,full_name,email,phone,country,signup_date
+18,Tomáš Svoboda,tomas.svoboda@example.com,+420 696 317 771,cz,2024-09-10
+5,Julia Pokorný,julia.pokorny@example.com,+420 675 928 990,CZ,2023-09-21
+25,Jan Novák,jan.novak@example.com,+420 619 868 373,DE,2024-05-14
+16,Nikola Bartoš,nikola.bartos@example.com,+420 651 334 941,CZ,3.11.2023
+12,Tereza Marek,tereza.marek@example.com,+420 617 384 564,DE,2024-08-17
+11,Jakub Dvořák,jakub.dvorak@example.com,00420601234567,CZ,2023-06-24
+37,Tereza Marek,tereza.marek37@example.com,+420 651 702 667,CZ,2023-07-03
+23,Klára Král,klara.kral@example.com,+420 627 710 165,Slovakia,2023-08-18
+9,Marie Urban,marie.urban@example.com,+420 617 180 665,SK,2024-03-01
+7,Alena Malá,alena.mala@example.com,+420 652 194 489,CZ,2023-09-19
+26,Eva Horák,eva.horak26@example.com,+420 647 261 564,CZ,2023-07-28
+40,Filip Kučera,filip.kucera40@example.com,+420 635 785 597,CZ,2024-02-19
+1,Eva Horák,eva.horak@example.com,+420 611 859 381,CZ,2024-04-23
+15,Filip Kučera,filip.kucera@example.com,+420 677 376 755,CZ,2023-08-23
+48,Klára Král,klara.kral48@example.com,+420 681 195 871,CZ,2023-06-26
+41,Nikola Bartoš,nikola.bartos41@example.com,+420 628 348 903,PL,2024-03-03
+33,Michal Veselý,michal.vesely33@example.com,+420 679 269 371,AT,2023-08-05
+42,Petr Doležal,petr.dolezal42@example.com,+420 664 196 199,AT,2024-07-18
+8,Michal Veselý,michal.vesely@example.com,+420 655 926 144,PL,2023-12-01
+22,Marek Procházka,marek.prochazka@example.com,+420 672 873 148,CZ,2024-02-16
+20,Pavel Schmidt,pavel.schmidt@example.com,+420 689 369 864,AT,2024-06-16
+24,Roman Sedláček,roman.sedlacek@example.com,,CZ,2023-12-13
+27,Martin Kováč,martin.kovac27@example.com,+420 649 880 282,CZ,2024-13-05
+3,Anna Kolář,petr.kral@newdomain.example.com,+420 661 130 195,CZ,2024-03-29
+29,Ondřej Černý,ondrej.cerny29@example.com,+420 629 897 643,CZ,2023-12-09
+2,Martin Kováč,martin.kovac@example.com,+420 622 792 858,CZ,2023-09-23
+6,David Beneš,david.benes@example.com,+420 627 448 384,CZ,15/08/2023
+44,Hana Němec,hana.nemec44@example.com,+420 611 512 845,DE,2024-05-10
+49,Roman Sedláček,roman.sedlacek49@example.com,+420 668 592 318,AT,2023-08-25
+22,Marek Procházka,marek.prochazka@example.com,+420 672 873 148,CZ,2024-02-16
+,Julia Pokorný,orphan.record@example.com,+420 658 119 214,DE,2024-04-02
+31,David Beneš,david.benes31@example.com,+420 644 159 346,germany,2024-08-23
+34,Marie Urban,marie.urban34@example.com,+420 639 873 847,CZ,2024-10-06
+46,Katarína Navrátil,katarina.navratil46@example.com,+420 663 385 573,CZ,2023-08-11
+21,Katarína Navrátil,katarina.navratil@example.com,+420 697 470 324,CZ,"September 9, 2024"
+39,Zuzana Čermák,zuzana.cermak39@example.com,+420 611 980 438,CZ,2023-09-26
+35,Lucie Zeman,lucie.zeman35@example.com,+420 647 787 765,DE,
+38,Stefan Weber,stefan.weber38@example.com,+420 631 172 824,CZ,2024-03-28
+4,Ondřej Černý,  ONDREJ.CERNY@EXAMPLE.COM ,+420 681 674 303,AT,2023-09-28
+14,Zuzana Čermák,zuzana.cermak@example.com,+420 613 646 846,CZ,2024-05-25
+50,Jan Novák,jan.novak50@example.com,+420 603 488 102,AT,2024-09-05
+13,Stefan Weber,,+420 656 314 786,SK,2023-08-23
+10,Lucie Zeman,lucie.zeman@example.com,+420 696 691 296,CZ,2024-07-29
+32,Alena Malá,alena.mala32@example.com,+420 672 878 645,CZ,2023-07-14
+43,Tomáš Svoboda,tomas.svoboda43@example.com,+420 667 578 984,CZ,2023-11-29
+36,Jakub Dvořák,jakub.dvorak36@example.com,+420 688 223 353,CZ,2024-01-11
+47,Marek Procházka,marek.prochazka47@example.com,+420 618 927 982,CZ,2024-08-21
+45,Pavel Schmidt,pavel.schmidt45@example.com,+420 614 296 294,PL,2024-07-14
+28,Anna Kolář,anna.kolar28@example.com,+420 649 723 303,CZ,2024-08-19
+19,Hana Němec,hana.nemec@example.com,601 234 567,CZ,2023-12-20
+30,Julia Pokorný,julia.pokorny30@example.com,+420 658 119 214,DE,2024-04-02
+51,Filip Kučera,FILIP.KUCERA@EXAMPLE.COM,+420 677 376 755,CZ,2023-08-23
+8,Michal Veselý,michal.vesely@example.com,+420 655 926 144,PL,2023-12-01
+17,Petr Doležal,petr.dolezal@example.com,+420 657 374 167,CZ,2024-07-17
+52,Ivana Fialová,ivana.fialova@example.com,+420 605 111 222,CZ,2026-07-20

@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: L02_CUSTOMERS
+    description: "Customer dedup and quarantine. Keeps every L01 row and labels the rejects in reject_reason; NULL means the row reaches dim_customers."
+    columns:
+      - name: customer_id
+        description: "Source customer id. Unique among surviving rows only."
+        data_tests:
+          - unique:
+              config:
+                where: "reject_reason is null"
+          - not_null:
+              config:
+                where: "reject_reason is null"

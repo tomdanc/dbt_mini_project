@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: L01_ORDERS
+    description: ""
+    columns:
+      - name: order_id
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+          - unique
+
+
+      - name: customer_id
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+
+
+      - name: order_date
+        data_type: date
+        description: ""
+        data_tests:
+          - not_null
+
+      - name: status
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['paid', 'cancelled', 'pending','completed']
+      - name: currency
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['CZK']
+
+      - name: total_amount
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null

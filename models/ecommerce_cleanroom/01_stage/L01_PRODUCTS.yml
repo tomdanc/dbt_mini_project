@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: L01_PRODUCTS
+    description: ""
+    columns:
+      - name: sku
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+
+      - name: product_name
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+
+
+
+      - name: category
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['sports', 'toys', 'office', 'home & kitchen', 'electronics']
+                
+      - name: unit_price_czk
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+          
+
+      - name: unit
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['pcs']

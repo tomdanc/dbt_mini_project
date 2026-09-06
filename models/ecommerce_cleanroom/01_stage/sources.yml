@@ -1,0 +1,23 @@
+version: 2
+
+sources: 
+  - name: warehouse
+    database: warehouse
+    schema: main
+    tables: 
+    - name: raw_customers
+    - name: raw_customers_day2
+    - name: raw_order_items
+    - name: raw_orders
+      data_tests:
+          - dbt_utils.expression_is_true:
+              arguments:
+                expression: >
+                  COALESCE(
+                    TRY_STRPTIME(order_date, '%Y-%m-%d'),
+                    TRY_STRPTIME(order_date, '%d/%m/%Y'),
+                    TRY_STRPTIME(order_date, '%B %-d, %Y'),
+                    TRY_STRPTIME(order_date, '%-d.%-m.%Y')
+                  ) IS NOT NULL
+    - name: raw_products_day2
+    - name: raw_products

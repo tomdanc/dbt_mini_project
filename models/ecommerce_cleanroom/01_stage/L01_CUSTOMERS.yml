@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: L01_CUSTOMERS
+    description: ""
+    columns:
+      - name: customer_id
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+          
+      - name: full_name
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+
+
+      - name: email
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+
+
+
+
+      - name: phone
+        data_type: varchar
+        description: ""
+
+
+      - name: country
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+
+
+      - name: signup_date
+        data_type: varchar
+        description: ""
+        data_tests:
+          - not_null
+          
+

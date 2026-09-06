@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: L02_PRODUCTS
+    description: ""
+    columns:
+      - name: sku
+        data_tests:
+          - unique:
+              config:
+                where: "reject_reason is null"
+          - not_null:
+              config:
+                where: "reject_reason is null"
+
+      - name: reject_reason
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['duplicate_sku']
+
+      - name: quality_issue
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['negative_price']

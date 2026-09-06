@@ -1,0 +1,19 @@
+# dbt artifacts
+target/
+dbt_packages/
+logs/
+
+# local warehouse (rebuilt by `dbt build`)
+*.duckdb
+*.duck.db
+warehouse
+
+# python env
+.venv/
+
+# dbt local user id
+.user.yml
+
+# os / misc
+.DS_Store
+cleanroom-mentor.zip

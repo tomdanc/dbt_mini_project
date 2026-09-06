@@ -1,0 +1,9 @@
+# Copy this file to ~/.dbt/profiles.yml, or keep it in the project root and
+# run dbt with:  dbt build --profiles-dir .
+ecommerce_cleanroom:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: warehouse.duckdb   # local file, created on first run; add to .gitignore
+      threads: 4

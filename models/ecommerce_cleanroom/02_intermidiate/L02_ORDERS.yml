@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: L02_ORDERS
+    description: ""
+    columns:
+      - name: order_id
+        description: ""
+        data_tests:
+          - unique
+
+          - not_null
